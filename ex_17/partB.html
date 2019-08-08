@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning CSS</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            color:#7d4627;
+        }
+        thead{
+            color: #6e6f74;
+            font-weight: bold;
+        }
+        tbody > tr{
+            border-bottom: 1px solid #ddd;
+        }
+        th,td{
+            padding: 20px;
+        }
+        td:first-child{
+            color: #3e7589;
+        }
+        tr:last-child{
+            border: none;
+        }
+        tfoot{
+            text-align: center;
+        }
+        tfoot a{
+            display: inline-block;
+            text-decoration: none;
+            color: #aaa;
+            margin-right: 10px;
+        }
+        tfoot a.active{
+            color: white;
+            font-weight: bold;
+            background-color: #fae596;
+            padding: 10px 15px;
+            border-radius: 10px;
+        }
+        tbody tr.selected{
+            background-color: #e62739;
+        }
+        tbody tr.error{
+            background-color: #9068be;
+        }
+    </style>
+  </head>
+  <body>
+    <table>
+        <h1>My Body Fats Monitoring</h1>
+        <hr>
+      <thead>
+        <tr>
+            <th>Category</th>
+            <th>Week 1</th>
+            <th>Week 2</th>
+            <th>Week 3</th>
+            <th>Week 4</th>
+            <th>Week 5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="error">
+          <td>Waist Circumference</td>
+          <td>30 in</td>
+          <td>29 in</td>
+          <td>29 in</td>
+          <td>28 in</td>
+          <td>24 in</td>
+        </tr>
+        <tr>
+          <td>Wrist Circumference</td>
+          <td>12 in</td>
+          <td>11 in</td>
+          <td>11 in</td>
+          <td>10 in</td>
+          <td>7 in</td>
+        </tr>
+        <tr class="selected">
+          <td>Hip Circumference</td>
+          <td>36 in</td>
+          <td>35.5 in</td>
+          <td>35 in</td>
+          <td>34 in</td>
+          <td>33 in</td>
+        </tr>
+        <tr>
+          <td>Weight</td>
+          <td>150 lbs</td>
+          <td>140 lbs</td>
+          <td>120 lbs</td>
+          <td>100 lbs</td>
+          <td>75 lbs</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">
+            <a href="#">first</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">last</a>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
